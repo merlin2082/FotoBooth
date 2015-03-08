@@ -1,23 +1,22 @@
-package com.divianaci.fotobooth;
+package com.divianaci.fotobooth.activity;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
+import com.divianaci.fotobooth.R;
 
-public class FotoBoothActivity extends ActionBarActivity {
+public class TitlePageActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_foto_booth);
+        setContentView(R.layout.activity_title_page);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
@@ -29,7 +28,7 @@ public class FotoBoothActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_foto_booth, menu);
+        getMenuInflater().inflate(R.menu.menu_title_page, menu);
         return true;
     }
 
@@ -59,7 +58,7 @@ public class FotoBoothActivity extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_foto_booth, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_title_page, container, false);
             return rootView;
         }
     }

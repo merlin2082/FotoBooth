@@ -1,14 +1,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/activity_option_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FotoBoothActivity"
-    tools:ignore="MergeRootFrame">
-
-    <!--TODO Preview fragment-->
-    <!--TODO Tab fragment-->
-    <!--TODO -->
-
-
-</FrameLayout>
+    tools:context="com.divianaci.fotobooth.activity.OptionActivity"
+    tools:ignore="MergeRootFrame" />
